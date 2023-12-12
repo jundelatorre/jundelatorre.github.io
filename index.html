@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/BukSU/Desktop/Jun's%20Website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Website</title>
+   <link rel="stylesheet" href="file:///C:/Users/BukSU/Desktop/style.css">
+   
+   <style>
+     * {
+       padding: 0;
+       margin: 0;
+       background-size: cover;
+       box-sizing: border-box;
+       font-family: sans-serif;
+     } 
+     
+     .container {
+       height: 100vh;
+       width: 100%;
+       position: relative;
+       background-image: url("aestheticbg2.jpg");
+       background-size: cover;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     
+     .container .box {
+       height: 85vh;
+       width: 85%;
+       padding: 0 20px;
+       background-color: rgba(255, 255, 255, 0.1);
+       z-index: 10;
+       border: 2px solid rgba(255, 255, 255, 0.7);
+       border-radius: 50px;
+       display: flex;
+       backdrop-filter: blur(10px);
+       box-shadow: -20px 17px 17px rgba(10, 10, 10, 0.15);
+     }
+	 .container nav{
+	   height: 7%;
+	   width: 70%;
+	   position: absolute;
+	   display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   margin: 25px auto;
+	   padding: 30px;
+	   
+	}
+	.container .logo{
+	   font-size: 32px;
+	   font-weight: 700;
+	   text-decoration: none;
+	   color: white;
+	   margin-left: 30px;
+	}
+	.container .logo::first-letter{
+	   color: #ffffff;
+	   font-size: 40px;
+	}
+	.container nav ul li{
+	   display: inline-block;
+	   padding: 0 10px;
+	}
+	.container nav ul li a{
+	   text-decoration: none;
+	   font-size: 23px;
+	   color: white;
+	   transition: 0.5s;
+	}
+	.container nav ul li a:hover{
+	   color: blue;
+	}
+	.content{
+	   position: relative;
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	   width: 100%;
+	   margin-top: 8%;
+	   padding-left: 80px;
+	}
+	.content .section-1{
+	   position: relative;
+	   width: 40%;
+	}
+	.content .section-1 h1{
+	   margin-bottom: 10px;
+	   font-size: 50px;
+	   font-weight: 800;
+	   color: black;
+	}
+	.content .section-1 h3{
+	   font-size: 24px;
+	   color: blue;
+	   margin-bottom: 10px;
+	}
+	.content .section-1 p{
+	   font-size: 18px;
+	   color: red;
+	   margin-bottom: 40px;
+	}
+	.content .section-2{
+	   width: 60%;
+	   position: relative;
+     left: -95px;
+	   
+	}
+	
+	.content .section-2 img{
+	   width: 50%;
+	   position: relative;
+	   right: -440px;
+	   top: -80px;
+	}
+	.content .btn{
+	   padding: 15px 20px;
+	   border-radius: 5px;
+	   background-color: blue;
+	   border: white;
+	   font-weight: 500;
+	   text-decoration: none;
+	   transition: 0.5s;
+	   color: #fff;
+	}
+	.content .btn:hover{
+	   background-color: #fff;
+	   color: white;
+	}
+	ul{
+	   position: relative;
+	   right: -300px;
+	} 
+  .app-buttons {
+        display: list-item;
+        justify-content: space-around;
+        margin: 30px 50px;
+        position: relative;
+	      
+      }
+      
+  .app-button {
+        display: inherit;
+        color: black;
+        background: none;
+        contain-intrinsic-block-size: gray;
+        cursor: default;
+        margin: 60px 30px;
+        text-align: right;
+      }
+  header{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-color: gray;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  footer{
+        color: gray;
+        background-size: cover;
+        text-align: center;
+        margin: 5px;
+        
+  }
+
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="box">
+         <nav>
+             <a href="#" class="logo">Jun Philip Dela Torre</a>
+             <ul>
+                <li><a href="HOME-JUN.html">Home</a></li>
+                <li><a href="IT111BLOG-JUN.html">IT111 Blog Entries</a></li>
+                <li><a href="FLEX-JUN.html">Flex</a></li>
+             </ul>
+         </nav>
+         <div class="content">
+            <div class="section-1">
+               <h1>Hello, I'm Jun</h1>
+               <h3>This is my Major Output in IT111</h3> 
+               <p><h4>"Don't stop when you're tired, stop when you're done"</h4></p>
+            </div>
+            <div class="section-2">	
+               <img src="Jun_Pic.jpg">
+            </div>
+            <div class="app-buttons">
+              <button class="app-button">
+                  <a href="https://www.facebook.com/profile.php?id=100085450832858">
+                      <img src="Facebook_Logo_2023.png" alt="Facebook Icon" style="width: 50px; height: 50px; position: relative;">
+                  </a>
+              </button>
+              
+              <button class="app-button">
+                  <a href="https://www.instagram.com/">
+                      <img src="instagram.png" alt="Youtube Icon" style="width: 50px; height: 50px;">
+                  </a>
+              </button>
+              
+              <button class="app-button">
+                  <a href="https://twitter.com/Jun09697436115">
+                      <img src="./twitter.png" alt="Instagram Icon" style="width: 50px; height: 50px;">
+                  </a>
+              </button>
+          </div>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+     <p>&copy; 2023 Jun Philip. All rights reserved.</p>
+   </footer>
+</body>
+</html>

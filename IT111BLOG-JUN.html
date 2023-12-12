@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT111 Blog Entries Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.master.co/css"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url("aestheticbg.jpg");
+            background-size: none;
+            background-repeat: noscript;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 95%;
+            max-width: 2000px;
+            padding: 70px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+            backdrop-filter: blur(5px);
+            margin-top: 10px;
+        }
+
+        nav {
+            height: 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-direction: row;         
+        }
+		
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            text-decoration: none;
+            color: blue;
+            text-shadow: 0 0 10px rgba(44, 44, 44, 0.8);
+            margin: 0 auto; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-top: 10px; 
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: blue;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        h1, h3, h4, p {
+            text-align: center;
+            color: white;
+            text-shadow: gray;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-shadow: gray;
+            font-size: 33px;
+            font-weight: 700;
+            margin-bottom: 10px;			
+			color: orange;
+			margin-left: auto;
+			text-shadow: gray;
+			
+        }
+
+        h3 {
+            font-size: 23px;
+            color: blue;
+        }
+
+        h4 {
+            font-size: 20px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5; 
+            padding: 25px; 
+            background-color: gray;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+			backdrop-filter: blur(5px);
+        }
+		footer{
+		    position: absolute;
+            text-align: center;
+		    color:gray;
+		    z-index: 2; 
+            width: 100%;            
+            padding: 50px; 
+            bottom: -173%; 		
+        }		
+			
+    </style>
+    
+    <style>
+        
+    </style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+			var keyframes = `
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			`;
+
+			var style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = keyframes;
+			document.head.appendChild(style);
+			
+			var elementToAnimate = document.querySelector('.box');
+			elementToAnimate.style.animation = 'fadeIn 1s ease-out';
+		});
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+                <a href="#" class="logo" style="margin-right: 450px; margin-top: -10%;">IT111 Blog Entries Page</a>
+                <ul>
+                    <li><a href="index.html" style="margin-left: -1250px; margin-top: -300px;">Back</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="section">
+                    <h1 style="margin-left: -75%;">What I have learned</h1>
+                    <h3 style="margin-left: -91%;">Lesson 1</h3>
+                    <h4 style="margin-left: -85%;">What is Computing?</h4>
+                    <p>  Computing is the utilization of computer technology to process information, involving hardware, software, data manipulation, algorithms, programming, networking, and cybersecurity, with applications ranging from simple calculations to complex data analysis and problem-solving.
+                    </p>
+                </div>               
+                <div class="section">
+                    <h3 style="margin-left: -90%;">Lesson 2</h3>
+					<h4 style="margin-left: -70%;">Professions and Careers in Computing</h4>
+                    <p>Professions and Careers in Computing encompass roles such as software development, hardware engineering, information systems, network administration, cybersecurity, data science, web development, and artificial intelligence, providing diverse opportunities within the rapidly evolving field of computing and technology.
+                    </p>
+                </div>
+				<div class="section">
+                    <h3 style="margin-left: -90%;">Lesson 3</h3>
+					<h4 style="margin-left: -76%;">Information Processing Cycle</h4>
+                    <p>The Information Processing Cycle is a series of stages—input, processing, output, and storage—through which a computer handles data for tasks like calculation, display, and storage.
+                    </p>
+                </div>
+				<div class="section">
+                    <h3 style="margin-left: -90%;">Lesson 4</h3>
+					<h4 style="margin-left: -85%;">Computer Systems</h4>
+					<p>A computer system is a combination of hardware and software components, including a central processing unit (CPU), memory, storage, input and output devices, and an operating system, working together to process data and perform tasks.
+                    </p>
+				</div>
+				<div class="section">
+                    <h3 style="margin-left: -90%;">Lesson 5</h3>
+					<h4 style="margin-left: -77%;">Concept of Computer Security</h3>
+					<p>The concept of computer security involves protecting systems and data from unauthorized access or harm through measures like encryption, access controls, and awareness of potential threats.
+                    </p>
+                <div class="section">
+                    <h3 style="margin-left: -90%;">Lesson 6</h3>
+					<h4 style="margin-left: -90%;">HTML & CSS</h3>
+                    <p>HTML (Hypertext Markup Language) is used for structuring web content with tags, while CSS (Cascading Style Sheets) styles HTML elements to control layout and presentation, collectively forming the foundation for building visually appealing and structured web pages.
+                    </p>
+				</div>	
+				<div class="section">
+				    <h1 style="margin-left: -75%;">My Favorite Lesson</h1>
+					<p> My favorite lesson is about the Concept of Computer Security, its because it taught me that the awareness of computer security is essential for individuals and to contribute a safer and more secure online environment.
+                    </p>
+				</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Jun Philip. All rights reserved.
+    </footer>
+</body>
+
+</html>
